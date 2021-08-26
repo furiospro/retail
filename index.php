@@ -4,8 +4,8 @@ $url = 'https://superposuda.retailcrm.ru/';
 
 
 $data = http_build_query([
+	'site' => 'test',
 	'order' => json_encode([
-		'site' => 'test',
 		'orderMethod' => 'test',
 		'orderType' => 'fizik',
 		'number' => '11021986',
@@ -27,7 +27,7 @@ $data = http_build_query([
 $headers = [
 	'http' => [
 		'method' => 'POST',
-		'header' => 'application/x-www-form-urlencoded',
+		'header' => 'Content-type: application/x-www-form-urlencoded',
 		'X-API-KEY' => 'QlnRWTTWw9lv3kjxy1A8byjUmBQedYqb',
 		'content' => $data
 	]
