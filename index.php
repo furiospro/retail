@@ -15,7 +15,7 @@ $data = http_build_query([
 		'customFields' => [
 			'prim' => 'тестовое задание'
 		],
-		'customerComment' => '',
+		'customerComment' => 'https://github.com/furiospro/retail',
 		'items' =>[
 			[
 				'productName' => 'Маникюрный набор AZ105R Azalita'
@@ -23,7 +23,6 @@ $data = http_build_query([
 		],
 		'status' => 'trouble',
 	]),
-	'apiKye' => 'QlnRWTTWw9lv3kjxy1A8byjUmBQedYqb',
 ]);
 $headers = [
 	'http' => [
